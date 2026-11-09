@@ -1,0 +1,19 @@
+{
+  "name": "messmate",
+  "private": true,
+  "workspaces": [
+    "server",
+    "frontend"
+  ],
+  "scripts": {
+    "start": "npm run start --workspace=messmate-server",
+    "dev": "npm run dev --workspace=messmate-frontend",
+    "dev:server": "npm run dev --workspace=messmate-server",
+    "dev:frontend": "npm run dev --workspace=messmate-frontend",
+    "build": "npm run build --workspace=messmate-frontend",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "nodemailer": "^10.1.0"
+  }
+}
